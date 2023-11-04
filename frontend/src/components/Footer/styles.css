@@ -1,0 +1,17 @@
+footer {
+  background-color: var(--bg-component);
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  margin-top: auto; /* Push the footer to the bottom */
+}
+
+footer small {
+  font-size: 1rem;
+  color: var(--very-dark-gray);
+}
+
+footer a {
+  color: var(--purple);
+  text-decoration: none;
+}

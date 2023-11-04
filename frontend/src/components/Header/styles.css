@@ -1,0 +1,102 @@
+header {
+  height: 12.5rem;
+  padding: 3rem 6.93333333333%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header__flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 33.75rem;
+  margin: 0 auto;
+}
+
+.header__logo {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  height: 1.25rem;
+  color: #fff;
+}
+
+.mode-switch__btn {
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: transparent;
+  border: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mode-switch__btn-dark {
+  background-image: url("./../../assets/icon-moon.svg");
+}
+
+.mode-switch__btn-light {
+  background-image: url("./../../assets/icon-sun.svg");
+}
+
+nav a {
+  color: #fff;
+}
+
+nav a.active-link {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.nav__desktop {
+  display: none;
+}
+
+.nav__mobile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 48rem) {
+  header {
+    height: 18.75rem;
+    padding: 4.375rem 0;
+  }
+
+  .header__logo {
+    font-size: 2.5rem;
+    letter-spacing: 0.9375rem;
+    height: 2.5rem;
+  }
+
+  .mode-switch__btn {
+    width: 1.625rem;
+    height: 1.625rem;
+  }
+
+  .nav__mobile {
+    display: none;
+  }
+
+  .nav__desktop {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .logout-btn__desktop {
+    border: none;
+    color: var(--very-dark-gray);
+    padding: 0.5rem 1rem;
+    border-radius: 0.3125rem;
+    background: var(--bg-component);
+    box-shadow: var(--box-shadow);
+  }
+
+  .logout-btn__desktop:hover {
+    color: var(--very-light-gray);
+    background: var(--dark-gray);
+  }
+}
