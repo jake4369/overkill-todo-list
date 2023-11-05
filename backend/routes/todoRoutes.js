@@ -1,6 +1,7 @@
 import express from "express";
 const router = express.Router();
 import { protect, admin } from "./../middleware/authMiddleware.js";
+import { checkObjectId } from "./../middleware/checkObjectId";
 
 import {
   createTodo,
@@ -19,7 +20,7 @@ router
 router.route("/mine").get(protect, getMyTodos);
 router
   .route("/:id")
-  .put(protect, updateTodoToCompleted)
-  .delete(protect, deleteTodo);
+  .put(protect, checkObjectId, updateTodoToCompleted)
+  .delete(protect, checkObjectId, deleteTodo);
 
 export default router;
