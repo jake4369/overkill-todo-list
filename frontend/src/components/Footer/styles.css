@@ -3,7 +3,7 @@ footer {
   padding: 2rem;
   text-align: center;
   width: 100%;
-  margin-top: auto; /* Push the footer to the bottom */
+  margin-top: 4rem; /* Push the footer to the bottom */
 }
 
 footer small {
