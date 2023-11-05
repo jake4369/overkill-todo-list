@@ -1,7 +1,7 @@
 import express from "express";
 const router = express.Router();
 import { protect, admin } from "./../middleware/authMiddleware.js";
-import { checkObjectId } from "./../middleware/checkObjectId";
+import { checkObjectId } from "./../middleware/checkObjectId.js";
 
 import {
   createTodo,
